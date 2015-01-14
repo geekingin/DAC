@@ -1,0 +1,128 @@
+C:\Users\MOYAN\Desktop\DAC\DAC\bin\Debug\DAC.exe.config
+C:\Users\MOYAN\Desktop\DAC\DAC\bin\Debug\DAC.exe
+C:\Users\MOYAN\Desktop\DAC\DAC\bin\Debug\DAC.pdb
+C:\Users\MOYAN\Desktop\DAC\DAC\obj\Debug\DAC.Form1.resources
+C:\Users\MOYAN\Desktop\DAC\DAC\obj\Debug\DAC.Properties.Resources.resources
+C:\Users\MOYAN\Desktop\DAC\DAC\obj\Debug\DAC.csproj.GenerateResource.Cache
+C:\Users\MOYAN\Desktop\DAC\DAC\obj\Debug\DAC.exe
+C:\Users\MOYAN\Desktop\DAC\DAC\obj\Debug\DAC.pdb
+C:\Users\MOYAN\Desktop\DAC\DAC\obj\Debug\DAC.csprojResolveAssemblyReference.cache
+E:\访问控制\访问控制技术课程设计\DAC\DAC\bin\Debug\DAC.exe.config
+E:\访问控制\访问控制技术课程设计\DAC\DAC\obj\Debug\DAC.exe
+E:\访问控制\访问控制技术课程设计\DAC\DAC\obj\Debug\DAC.pdb
+E:\访问控制\访问控制技术课程设计\DAC\DAC\bin\Debug\DAC.exe
+E:\访问控制\访问控制技术课程设计\DAC\DAC\bin\Debug\DAC.pdb
+E:\访问控制\访问控制技术课程设计\DAC\DAC\obj\Debug\DAC.Properties.Resources.resources
+E:\访问控制\访问控制技术课程设计\DAC\DAC\obj\Debug\DAC.csproj.GenerateResource.Cache
+E:\访问控制\访问控制技术课程设计\DAC\DAC\obj\Debug\Interop.ADODB.dll
+E:\访问控制\访问控制技术课程设计\DAC\DAC\obj\Debug\Interop.ADOX.dll
+E:\访问控制\访问控制技术课程设计\DAC\DAC\obj\Debug\DAC.csproj.ResolveComReference.cache
+E:\访问控制\访问控制技术课程设计\DAC\DAC\obj\Debug\DAC.login.resources
+E:\访问控制\访问控制技术课程设计\DAC\DAC\obj\Debug\DAC.subjectRegister.resources
+E:\访问控制\访问控制技术课程设计\DAC\DAC\obj\Debug\DAC.Dac.resources
+E:\访问控制\访问控制技术课程设计\DAC\DAC\DAC\bin\Debug\DAC.exe.config
+E:\访问控制\访问控制技术课程设计\DAC\DAC\DAC\obj\Debug\Interop.ADODB.dll
+E:\访问控制\访问控制技术课程设计\DAC\DAC\DAC\obj\Debug\Interop.ADOX.dll
+E:\访问控制\访问控制技术课程设计\DAC\DAC\DAC\obj\Debug\DAC.csproj.ResolveComReference.cache
+E:\访问控制\访问控制技术课程设计\DAC\DAC\DAC\obj\Debug\DAC.exe
+E:\访问控制\访问控制技术课程设计\DAC\DAC\DAC\obj\Debug\DAC.pdb
+E:\访问控制\访问控制技术课程设计\DAC\DAC\DAC\bin\Debug\DAC.exe
+E:\访问控制\访问控制技术课程设计\DAC\DAC\DAC\bin\Debug\DAC.pdb
+E:\访问控制\访问控制技术课程设计\DAC\DAC\DAC\obj\Debug\DAC.csprojResolveAssemblyReference.cache
+E:\访问控制\访问控制技术课程设计\DAC\DAC\DAC\obj\Debug\DAC.Dac.resources
+E:\访问控制\访问控制技术课程设计\DAC\DAC\DAC\obj\Debug\DAC.Login.resources
+E:\访问控制\访问控制技术课程设计\DAC\DAC\DAC\obj\Debug\DAC.Properties.Resources.resources
+E:\访问控制\访问控制技术课程设计\DAC\DAC\DAC\obj\Debug\DAC.SubjectRegister.resources
+E:\访问控制\访问控制技术课程设计\DAC\DAC\DAC\obj\Debug\DAC.csproj.GenerateResource.Cache
+C:\Users\MOYAN\Desktop\DAC\DAC\obj\Debug\Interop.ADODB.dll
+C:\Users\MOYAN\Desktop\DAC\DAC\obj\Debug\Interop.ADOX.dll
+C:\Users\MOYAN\Desktop\DAC\DAC\obj\Debug\DAC.csproj.ResolveComReference.cache
+E:\访问控制\访问控制技术课程设计\DAC\分散式\DAC\DAC\bin\Debug\DAC.exe.config
+E:\访问控制\访问控制技术课程设计\DAC\分散式\DAC\DAC\bin\Debug\DAC.exe
+E:\访问控制\访问控制技术课程设计\DAC\分散式\DAC\DAC\bin\Debug\DAC.pdb
+E:\访问控制\访问控制技术课程设计\DAC\分散式\DAC\DAC\obj\Debug\Interop.ADODB.dll
+E:\访问控制\访问控制技术课程设计\DAC\分散式\DAC\DAC\obj\Debug\Interop.ADOX.dll
+E:\访问控制\访问控制技术课程设计\DAC\分散式\DAC\DAC\obj\Debug\DAC.csproj.ResolveComReference.cache
+E:\访问控制\访问控制技术课程设计\DAC\分散式\DAC\DAC\obj\Debug\DAC.Dac.resources
+E:\访问控制\访问控制技术课程设计\DAC\分散式\DAC\DAC\obj\Debug\DAC.Login.resources
+E:\访问控制\访问控制技术课程设计\DAC\分散式\DAC\DAC\obj\Debug\DAC.Properties.Resources.resources
+E:\访问控制\访问控制技术课程设计\DAC\分散式\DAC\DAC\obj\Debug\DAC.SubjectRegister.resources
+E:\访问控制\访问控制技术课程设计\DAC\分散式\DAC\DAC\obj\Debug\DAC.csproj.GenerateResource.Cache
+E:\访问控制\访问控制技术课程设计\DAC\分散式\DAC\DAC\obj\Debug\DAC.exe
+E:\访问控制\访问控制技术课程设计\DAC\分散式\DAC\DAC\obj\Debug\DAC.pdb
+E:\访问控制\访问控制技术课程设计\DAC\分散式\DAC\DAC\obj\Debug\DAC.csprojResolveAssemblyReference.cache
+E:\访问控制\访问控制技术课程设计\DAC\受限的分散式\DAC\DAC\bin\Debug\DAC.exe.config
+E:\访问控制\访问控制技术课程设计\DAC\受限的分散式\DAC\DAC\bin\Debug\DAC.exe
+E:\访问控制\访问控制技术课程设计\DAC\受限的分散式\DAC\DAC\bin\Debug\DAC.pdb
+E:\访问控制\访问控制技术课程设计\DAC\受限的分散式\DAC\DAC\obj\Debug\Interop.ADODB.dll
+E:\访问控制\访问控制技术课程设计\DAC\受限的分散式\DAC\DAC\obj\Debug\Interop.ADOX.dll
+E:\访问控制\访问控制技术课程设计\DAC\受限的分散式\DAC\DAC\obj\Debug\DAC.csproj.ResolveComReference.cache
+E:\访问控制\访问控制技术课程设计\DAC\受限的分散式\DAC\DAC\obj\Debug\DAC.Dac.resources
+E:\访问控制\访问控制技术课程设计\DAC\受限的分散式\DAC\DAC\obj\Debug\DAC.Login.resources
+E:\访问控制\访问控制技术课程设计\DAC\受限的分散式\DAC\DAC\obj\Debug\DAC.Properties.Resources.resources
+E:\访问控制\访问控制技术课程设计\DAC\受限的分散式\DAC\DAC\obj\Debug\DAC.SubjectRegister.resources
+E:\访问控制\访问控制技术课程设计\DAC\受限的分散式\DAC\DAC\obj\Debug\DAC.csproj.GenerateResource.Cache
+E:\访问控制\访问控制技术课程设计\DAC\受限的分散式\DAC\DAC\obj\Debug\DAC.exe
+E:\访问控制\访问控制技术课程设计\DAC\受限的分散式\DAC\DAC\obj\Debug\DAC.pdb
+C:\Users\MOYAN\Desktop\访问控制\DAC\3受限的分散式\DAC\bin\Debug\DAC.exe.config
+C:\Users\MOYAN\Desktop\访问控制\DAC\3受限的分散式\DAC\obj\Debug\Interop.ADODB.dll
+C:\Users\MOYAN\Desktop\访问控制\DAC\3受限的分散式\DAC\obj\Debug\Interop.ADOX.dll
+C:\Users\MOYAN\Desktop\访问控制\DAC\3受限的分散式\DAC\obj\Debug\DAC.csproj.ResolveComReference.cache
+C:\Users\MOYAN\Desktop\访问控制\DAC\3受限的分散式\DAC\obj\Debug\DAC.exe
+C:\Users\MOYAN\Desktop\访问控制\DAC\3受限的分散式\DAC\obj\Debug\DAC.pdb
+C:\Users\MOYAN\Desktop\访问控制\DAC\3受限的分散式\DAC\bin\Debug\DAC.exe
+C:\Users\MOYAN\Desktop\访问控制\DAC\3受限的分散式\DAC\bin\Debug\DAC.pdb
+C:\Users\MOYAN\Desktop\访问控制\DAC\3受限的分散式\DAC\obj\Debug\DAC.csprojResolveAssemblyReference.cache
+C:\Users\MOYAN\Desktop\访问控制\DAC\3受限的分散式\DAC\obj\Debug\DAC.Dac.resources
+C:\Users\MOYAN\Desktop\访问控制\DAC\3受限的分散式\DAC\obj\Debug\DAC.Login.resources
+C:\Users\MOYAN\Desktop\访问控制\DAC\3受限的分散式\DAC\obj\Debug\DAC.Properties.Resources.resources
+C:\Users\MOYAN\Desktop\访问控制\DAC\3受限的分散式\DAC\obj\Debug\DAC.SubjectRegister.resources
+C:\Users\MOYAN\Desktop\访问控制\DAC\3受限的分散式\DAC\obj\Debug\DAC.csproj.GenerateResource.Cache
+E:\访问控制\访问控制技术课程设计\访问控制最终版本 - 副本\DAC\3受限的分散式\DAC\bin\Debug\DAC.exe.config
+E:\访问控制\访问控制技术课程设计\访问控制最终版本 - 副本\DAC\3受限的分散式\DAC\obj\Debug\Interop.ADODB.dll
+E:\访问控制\访问控制技术课程设计\访问控制最终版本 - 副本\DAC\3受限的分散式\DAC\obj\Debug\Interop.ADOX.dll
+E:\访问控制\访问控制技术课程设计\访问控制最终版本 - 副本\DAC\3受限的分散式\DAC\obj\Debug\DAC.csproj.ResolveComReference.cache
+E:\访问控制\访问控制技术课程设计\访问控制最终版本 - 副本\DAC\3受限的分散式\DAC\obj\Debug\DAC.exe
+E:\访问控制\访问控制技术课程设计\访问控制最终版本 - 副本\DAC\3受限的分散式\DAC\obj\Debug\DAC.pdb
+E:\访问控制\访问控制技术课程设计\访问控制最终版本 - 副本\DAC\3受限的分散式\DAC\bin\Debug\DAC.exe
+E:\访问控制\访问控制技术课程设计\访问控制最终版本 - 副本\DAC\3受限的分散式\DAC\bin\Debug\DAC.pdb
+E:\访问控制\访问控制技术课程设计\访问控制最终版本 - 副本\DAC\3受限的分散式\DAC\obj\Debug\DAC.Dac.resources
+E:\访问控制\访问控制技术课程设计\访问控制最终版本 - 副本\DAC\3受限的分散式\DAC\obj\Debug\DAC.Login.resources
+E:\访问控制\访问控制技术课程设计\访问控制最终版本 - 副本\DAC\3受限的分散式\DAC\obj\Debug\DAC.Properties.Resources.resources
+E:\访问控制\访问控制技术课程设计\访问控制最终版本 - 副本\DAC\3受限的分散式\DAC\obj\Debug\DAC.SubjectRegister.resources
+E:\访问控制\访问控制技术课程设计\访问控制最终版本 - 副本\DAC\3受限的分散式\DAC\obj\Debug\DAC.csproj.GenerateResource.Cache
+E:\访问控制\访问控制技术课程设计\访问控制最终版本 - 副本\DAC\3受限的分散式\DAC\obj\Debug\DAC.csprojResolveAssemblyReference.cache
+E:\访问控制\访问控制技术课程设计\曾令武-信安1001班 U201014608\自主访问控制-受限的分散式\DAC\bin\Debug\DAC.exe.config
+E:\访问控制\访问控制技术课程设计\曾令武-信安1001班 U201014608\自主访问控制-受限的分散式\DAC\obj\Debug\Interop.ADODB.dll
+E:\访问控制\访问控制技术课程设计\曾令武-信安1001班 U201014608\自主访问控制-受限的分散式\DAC\obj\Debug\Interop.ADOX.dll
+E:\访问控制\访问控制技术课程设计\曾令武-信安1001班 U201014608\自主访问控制-受限的分散式\DAC\obj\Debug\DAC.csproj.ResolveComReference.cache
+E:\访问控制\访问控制技术课程设计\曾令武-信安1001班 U201014608\自主访问控制-受限的分散式\DAC\obj\Debug\DAC.exe
+E:\访问控制\访问控制技术课程设计\曾令武-信安1001班 U201014608\自主访问控制-受限的分散式\DAC\obj\Debug\DAC.pdb
+G:\academic work\认证与访问控制\访问控制课设-信安1001班 U201014608-曾令武 - Copy\源代码\自主访问控制-受限的分散式\DAC\bin\Debug\DAC.exe.config
+G:\academic work\认证与访问控制\访问控制课设-信安1001班 U201014608-曾令武 - Copy\源代码\自主访问控制-受限的分散式\DAC\obj\Debug\Interop.ADODB.dll
+G:\academic work\认证与访问控制\访问控制课设-信安1001班 U201014608-曾令武 - Copy\源代码\自主访问控制-受限的分散式\DAC\obj\Debug\Interop.ADOX.dll
+G:\academic work\认证与访问控制\访问控制课设-信安1001班 U201014608-曾令武 - Copy\源代码\自主访问控制-受限的分散式\DAC\obj\Debug\DAC.csproj.ResolveComReference.cache
+G:\academic work\认证与访问控制\访问控制课设-信安1001班 U201014608-曾令武 - Copy\源代码\自主访问控制-受限的分散式\DAC\obj\Debug\DAC.exe
+G:\academic work\认证与访问控制\访问控制课设-信安1001班 U201014608-曾令武 - Copy\源代码\自主访问控制-受限的分散式\DAC\obj\Debug\DAC.pdb
+G:\academic work\认证与访问控制\访问控制课设-信安1001班 U201014608-曾令武 - Copy\源代码\自主访问控制-受限的分散式\DAC\bin\Debug\DAC.exe
+G:\academic work\认证与访问控制\访问控制课设-信安1001班 U201014608-曾令武 - Copy\源代码\自主访问控制-受限的分散式\DAC\bin\Debug\DAC.pdb
+G:\academic work\认证与访问控制\访问控制课设-信安1001班 U201014608-曾令武 - Copy\源代码\自主访问控制-受限的分散式\DAC\obj\Debug\DAC.csprojResolveAssemblyReference.cache
+G:\academic work\认证与访问控制\访问控制课设-信安1001班 U201014608-曾令武 - Copy\源代码\自主访问控制-受限的分散式\DAC\obj\Debug\DAC.Dac.resources
+G:\academic work\认证与访问控制\访问控制课设-信安1001班 U201014608-曾令武 - Copy\源代码\自主访问控制-受限的分散式\DAC\obj\Debug\DAC.Login.resources
+G:\academic work\认证与访问控制\访问控制课设-信安1001班 U201014608-曾令武 - Copy\源代码\自主访问控制-受限的分散式\DAC\obj\Debug\DAC.Properties.Resources.resources
+G:\academic work\认证与访问控制\访问控制课设-信安1001班 U201014608-曾令武 - Copy\源代码\自主访问控制-受限的分散式\DAC\obj\Debug\DAC.SubjectRegister.resources
+G:\academic work\认证与访问控制\访问控制课设-信安1001班 U201014608-曾令武 - Copy\源代码\自主访问控制-受限的分散式\DAC\obj\Debug\DAC.csproj.GenerateResource.Cache
+G:\academic work\认证与访问控制\源代码\DAC\DAC\bin\Debug\DAC.exe.config
+G:\academic work\认证与访问控制\源代码\DAC\DAC\obj\Debug\Interop.ADODB.dll
+G:\academic work\认证与访问控制\源代码\DAC\DAC\obj\Debug\Interop.ADOX.dll
+G:\academic work\认证与访问控制\源代码\DAC\DAC\obj\Debug\DAC.csproj.ResolveComReference.cache
+G:\academic work\认证与访问控制\源代码\DAC\DAC\obj\Debug\DAC.exe
+G:\academic work\认证与访问控制\源代码\DAC\DAC\obj\Debug\DAC.pdb
+G:\academic work\认证与访问控制\源代码\DAC\DAC\bin\Debug\DAC.exe
+G:\academic work\认证与访问控制\源代码\DAC\DAC\bin\Debug\DAC.pdb
+G:\academic work\认证与访问控制\源代码\DAC\DAC\obj\Debug\DAC.csprojResolveAssemblyReference.cache
+G:\academic work\认证与访问控制\源代码\DAC\DAC\obj\Debug\DAC.Dac.resources
+G:\academic work\认证与访问控制\源代码\DAC\DAC\obj\Debug\DAC.Login.resources
+G:\academic work\认证与访问控制\源代码\DAC\DAC\obj\Debug\DAC.Properties.Resources.resources
+G:\academic work\认证与访问控制\源代码\DAC\DAC\obj\Debug\DAC.SubjectRegister.resources
+G:\academic work\认证与访问控制\源代码\DAC\DAC\obj\Debug\DAC.csproj.GenerateResource.Cache
