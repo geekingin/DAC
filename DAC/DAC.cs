@@ -261,6 +261,8 @@ namespace DAC
             dr.Close();
             oleDB.Close();
         }
+
+        //ignore
         /// <summary>
         /// 以下是选项卡-授权查询的代码
         /// </summary>
@@ -314,11 +316,13 @@ namespace DAC
             oleDB.Close();
         }
 
+        //授权查询界面，主体名称变化回调
         private void ComboBox_Subject_Inquiry_SelectedIndexChanged(object sender, EventArgs e)
         {
             View_Inquiry();
         }
 
+        //授权查询界面，客体名称变化回调
         private void ComboBox_Object_Inquiry_SelectedIndexChanged(object sender, EventArgs e)
         {
             View_Inquiry();
@@ -328,7 +332,6 @@ namespace DAC
         /// </summary>
         private void View_Inquiry()
         {
-
             this.DataGridView_Ability_Inquiry.Rows.Clear();
             OleDbConnection oleDB = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dac.accdb");
             oleDB.Open();
@@ -340,7 +343,6 @@ namespace DAC
             OleDbDataReader dr = cmd.ExecuteReader();
 
             if (dr.HasRows == true)
-
                 while (dr.Read())
                 {
                     DataGridViewRow r = new DataGridViewRow();
@@ -349,7 +351,6 @@ namespace DAC
                     r.Cells[1].Value = dr["权限授予者"];
                     if (string.Equals(dr["权限授予者"], this.ComboBox_Subject_Inquiry.Text.ToLower()) == false)
                     {
-
                         LinkedList<string> Link = Get_Link(dr["权限授予者"].ToString(), this.ComboBox_Object_Inquiry.Text.ToLower(), dr["权限"].ToString());
 
                         while (Link.Count != 0)
@@ -358,35 +359,22 @@ namespace DAC
                             Link.RemoveFirst();
                         }
                         r.Cells[2].Value += dr["权限授予者"] + "->";
-
                     }
                     r.Cells[2].Value += this.ComboBox_Subject_Inquiry.Text.ToLower();
                     r.Cells[3].Value = dr["授予权"];
                     this.DataGridView_Ability_Inquiry.Rows.Add(r);
-
                 }
             dr.Close();
             oleDB.Close();
         }
-        private static LinkedList<string> Get_Link(string SubjectName, string ObjectName, string ability)
-        {
-            LinkedList<string> Link = new LinkedList<string>();
-            string returnString = Get_Subject_Object_Deliver(SubjectName, ObjectName, ability);
-            if (returnString.Length != 0)
-            {
-                Link.AddFirst(returnString);
 
-                LinkedList<string> R = Get_Link(returnString, ObjectName, ability);
-                while (R.Count != 0)
-                {
-                    Link.AddFirst(R.Last.Value);
-                    R.RemoveLast();
-                }
-            }
-
-
-            return Link;
-        }
+        /// <summary>
+        /// 获得权限授予者
+        /// </summary>
+        /// <param name="SubjectName"></param>
+        /// <param name="ObjectName"></param>
+        /// <param name="ability"></param>
+        /// <returns></returns>
         private static string Get_Subject_Object_Deliver(string SubjectName, string ObjectName, string ability)
         {
             string Link = string.Empty;
@@ -401,19 +389,14 @@ namespace DAC
             {
                 if (dr.Read())
                 {
-
                     if (string.Equals(dr["权限授予者"].ToString(), SubjectName) == false)//subjectname创建了客体
                         Link = dr["权限授予者"].ToString();
                 }
             }
-
             dr.Close();
             oleDB.Close();
 
-
-
             return Link;
-
         }
 
 
@@ -437,11 +420,9 @@ namespace DAC
             OleDbDataReader dr = cmd.ExecuteReader();
 
             if (dr.HasRows == true)
-
                 while (dr.Read())
                 {
                     this.ComboBox_Subject_Manage.Items.Add(dr["主体名称"]);
-
                 }
             dr.Close();
             cmd.CommandText = "select * from [访问控制矩阵表] ";
@@ -449,7 +430,6 @@ namespace DAC
             dr = cmd.ExecuteReader();
 
             if (dr.HasRows == true)
-
                 while (dr.Read())
                 {
                     if (string.Equals(dr["主体名称"], GetSubjectName) && string.Equals(dr["授予权"].ToString().ToLower(), "true")
@@ -471,11 +451,16 @@ namespace DAC
             oleDB.Close();
         }
 
+        /// <summary>
+        /// 授权管理界面，主体名称改变
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ComboBox_Subject_Manage_SelectedIndexChanged(object sender, EventArgs e)
         {
             Refresh_CheckListBox();
         }
-
+        // 授权管理界面，课题名称改变
         private void ComboBox_Object_Manage_SelectedIndexChanged(object sender, EventArgs e)
         {
             Refresh_CheckListBox();
@@ -497,7 +482,6 @@ namespace DAC
                 if (Link_Ability.First.Value.IsDeliver == true)//如果有控制权，则添加
                 {
                     this.CheckedListBox_Ability_Deliver_Delete.Items.Add(Link_Ability.First.Value.Ability_Name + "(从" + Link_Ability.First.Value.Name_Deliver + "获得)");
-
                 }
                 Link_Ability.RemoveFirst();
             }
@@ -511,22 +495,18 @@ namespace DAC
                 LinkedList<StoreAbility> Link_Ability_Login = Get_Subject_Ability(GetSubjectName, ObjectName);
                 while (Link_Ability_Login.Count != 0)
                 {
-
                     if (Is_Subject_Object_Ability_Deliver(GetSubjectName, ObjectName, Link_Ability_Login.First.Value.Ability_Name))//判断当前登录的账号是否具有对该客体的某种权限的传递权
                     {
                         //还需要判断当前选择的主体是否已经具有了该种权限，或者 具备了 该权限 但不是当前登录的主体给予的 
                         if (Is_Subject_Object_Ability(this.ComboBox_Subject_Manage.Text, ObjectName, Link_Ability_Login.First.Value.Ability_Name) == false)//没有该权限
                         {
-
                             this.CheckedListBox_Ability_Add.Items.Add(Link_Ability_Login.First.Value.Ability_Name);
                             this.CheckedListBox_Ability_Deliver_Add.Items.Add(Link_Ability_Login.First.Value.Ability_Name);
-
                         }
                         else//具备了权限，但不是当前登录的主体给的
                         {
                             if (Is_Subject_Object_Ability_SubjectDeliver(this.ComboBox_Subject_Manage.Text, ObjectName, Link_Ability_Login.First.Value.Ability_Name, GetSubjectName) == false)
                             {
-
                                 this.CheckedListBox_Ability_Add.Items.Add(Link_Ability_Login.First.Value.Ability_Name);
                                 this.CheckedListBox_Ability_Deliver_Add.Items.Add(Link_Ability_Login.First.Value.Ability_Name);
                             }
@@ -534,17 +514,13 @@ namespace DAC
                                 //还应该判断该主体得到了权限，但是没有授予权的情况
                                 if (Is_Subject_Object_Ability_SubjectDeliver(this.ComboBox_Subject_Manage.Text, ObjectName, Link_Ability_Login.First.Value.Ability_Name, GetSubjectName, true) == false)
                                 {
-
                                     this.CheckedListBox_Ability_Deliver_Add.Items.Add(Link_Ability_Login.First.Value.Ability_Name);
                                 }
                         }
-
                     }
-
 
                     Link_Ability_Login.RemoveFirst();
                 }
-
             }
             else//当前登录的主体是客体的创建者
             {
@@ -560,13 +536,12 @@ namespace DAC
                         {
                             this.CheckedListBox_Ability_Deliver_Add.Items.Add(v);
                         }
-
-
                     }
-
                 }
             }
         }
+
+        //
         private bool Is_Subject_Object_Ability_SubjectDeliver(string subjectName, string objectName, string ability, string SubjectDeliver, bool Isdeliver)
         {
             bool b = false;
@@ -582,9 +557,9 @@ namespace DAC
 
             b = dr.HasRows;
 
-
             dr.Close();
             oleDB.Close();
+
             return b;
         }
 
@@ -611,7 +586,6 @@ namespace DAC
                 if (dr.Read())
                 {
                     b = string.Equals(dr["创建者"], subjectName);
-
                 }
             }
 
@@ -643,7 +617,6 @@ namespace DAC
                 if (dr.Read())
                 {
                     b = string.Equals(dr["授予权"].ToString().ToLower(), "true");
-
                 }
             }
 
@@ -672,7 +645,6 @@ namespace DAC
 
             b = dr.HasRows;
 
-
             dr.Close();
             oleDB.Close();
             return b;
@@ -698,11 +670,12 @@ namespace DAC
 
             b = dr.HasRows;
 
-
             dr.Close();
             oleDB.Close();
             return b;
         }
+
+
         private LinkedList<StoreAbility> Get_Subject_Ability(string SubjectName, string ObjectName)
         {
             LinkedList<StoreAbility> Link = new LinkedList<StoreAbility>();
@@ -717,8 +690,6 @@ namespace DAC
             {
                 while (dr.Read())
                 {
-
-
                     if (string.Equals("true", dr["授予权"].ToString().ToLower()))
                     {
                         StoreAbility S = new StoreAbility(dr["主体名称"].ToString(), dr["客体名称"].ToString(), dr["权限"].ToString(), dr["权限授予者"].ToString(), true);
@@ -729,18 +700,33 @@ namespace DAC
                         StoreAbility S = new StoreAbility(dr["主体名称"].ToString(), dr["客体名称"].ToString(), dr["权限"].ToString(), dr["权限授予者"].ToString(), false);
                         Link.AddFirst(S);
                     }
-
                 }
             }
 
             dr.Close();
             oleDB.Close();
 
-
-
             return Link;
-
         }
+
+        private static LinkedList<string> Get_Link(string SubjectName, string ObjectName, string ability)
+        {
+            LinkedList<string> Link = new LinkedList<string>();
+            string returnString = Get_Subject_Object_Deliver(SubjectName, ObjectName, ability);
+            if (returnString.Length != 0)
+            {
+                Link.AddFirst(returnString);
+
+                LinkedList<string> R = Get_Link(returnString, ObjectName, ability);
+                while (R.Count != 0)
+                {
+                    Link.AddFirst(R.Last.Value);
+                    R.RemoveLast();
+                }
+            }
+            return Link;
+        }
+
         //增加权限
         private void Btn_Ability_Add_Click(object sender, EventArgs e)
         {
@@ -753,7 +739,6 @@ namespace DAC
             for (int i = 0; i < CheckedListBox_Ability_Deliver_Add.CheckedItems.Count; i++)
             {
                 string s = this.CheckedListBox_Ability_Deliver_Add.CheckedItems[i].ToString();
-
 
                 if (this.CheckedListBox_Ability_Add.CheckedItems.IndexOf(this.CheckedListBox_Ability_Deliver_Add.CheckedItems[i].ToString()) == -1)
                 {
@@ -776,6 +761,7 @@ namespace DAC
                         return;
                     }
                 }
+
                 //如果权限已经被创建者发放了黑令牌
                 if (Is_Subject_Object_Ability_Limit(this.ComboBox_Subject_Manage.Text, this.ComboBox_Object_Manage.Text, this.CheckedListBox_Ability_Deliver_Add.CheckedItems[i].ToString()) == true)
                 {
@@ -789,7 +775,6 @@ namespace DAC
                 //如果权限已经被创建者发放了黑令牌
                 if (Is_Subject_Object_Ability_Limit(this.ComboBox_Subject_Manage.Text, this.ComboBox_Object_Manage.Text, v.ToString()) == true)
                 {
-                   
                     MessageBox.Show(this, "主体 " + this.ComboBox_Subject_Manage.Text + "对于客体 " +  this.ComboBox_Object_Manage.Text
                         + " 的权限  " +v.ToString() + "已经被客体的创建者发放了黑令牌，请重新选择", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -809,9 +794,7 @@ namespace DAC
             {
                 Delete_Ability(this.ComboBox_Subject_Manage.Text, this.ComboBox_Object_Manage.Text, v.ToString(), this.GetSubjectName);
                 Insert_Ability(this.ComboBox_Subject_Manage.Text, this.ComboBox_Object_Manage.Text, v.ToString(), this.GetSubjectName, true);
-
             }
-
             MessageBox.Show("添加授权成功", "成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Refresh__Abillity_Manage(this.ComboBox_Subject_Manage.SelectedIndex, this.ComboBox_Object_Manage.SelectedIndex);
         }
@@ -838,7 +821,6 @@ namespace DAC
 
             b = dr.HasRows;
 
-
             dr.Close();
             oleDB.Close();
             return b;
@@ -847,7 +829,6 @@ namespace DAC
         //删除权限
         private void Btn_Ability_Delete_Click(object sender, EventArgs e)
         {
-
             if (this.CheckedListBox_Ability_Delete.CheckedItems.Count == 0 && this.CheckedListBox_Ability_Deliver_Delete.CheckedItems.Count == 0)
             {
                 MessageBox.Show(this, "还未选中任何项，请重新选择", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -897,13 +878,11 @@ namespace DAC
                 string s = v.ToString().Substring(0, v.ToString().IndexOf('('));
                 Restore_Ability(this.ComboBox_Subject_Manage.Text, this.ComboBox_Object_Manage.Text, s); //回收授出去的权限
                 Delete_Ability(this.ComboBox_Subject_Manage.Text, this.ComboBox_Object_Manage.Text, s, this.GetSubjectName);
-
-
             }
             MessageBox.Show("删除授权成功", "成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Refresh__Abillity_Manage(this.ComboBox_Subject_Manage.SelectedIndex, 0);
-
         }
+
         /// <summary>
         /// 判断LoginSubjectName是否为SubjectName的某种权限的直接授予者
         /// </summary>
@@ -912,7 +891,7 @@ namespace DAC
         /// <param name="SubjectName"></param>
         /// <param name="ability"></param>
         /// <returns></returns>
-        private bool Is_Subject_Subject(string LoginSubjectName, string objectName, string SubjectName, string ability)
+        private bool Is_Subject_Subjects(string LoginSubjectName, string objectName, string SubjectName, string ability)//##add a "s" in the end
         {
             bool b = false;
 
@@ -939,14 +918,12 @@ namespace DAC
 
         private void Restore_Ability(string subjectName, string objectName, string ability)
         {
-
             LinkedList<StoreAbility> S = Get_Subject_Ability(subjectName, objectName, ability);
             while (S.Count != 0)
             {
                 Delete_Ability(S.First.Value.Subject_Name, objectName, ability, S.First.Value.Name_Deliver);
                 S.RemoveFirst();
             }
-
         }
         /// <summary>
         /// 通过 subjectName,获得 关于客体objectName 权限 ability  的所有主体
@@ -971,9 +948,7 @@ namespace DAC
                     }
                     returnList.RemoveFirst();
                 }
-
             }
-
             return S;
         }
 
@@ -1007,7 +982,6 @@ namespace DAC
             oleDB.Close();
 
             return Link;
-
         }
         /// <summary>
         /// 向访问控制矩阵表中插入一条信息
@@ -1019,8 +993,6 @@ namespace DAC
         /// <param name="isDeliver"></param>
         private void Insert_Ability(string subjectName, string objectName, string ability, string subjectDeliver, bool isDeliver)
         {
-
-
             OleDbConnection oleDB = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dac.accdb");
             oleDB.Open();
 
@@ -1032,8 +1004,6 @@ namespace DAC
             cmd.ExecuteNonQuery();
 
             oleDB.Close();
-
-
         }
         /// <summary>
         /// 更改访问控制矩阵中的授予权
@@ -1045,7 +1015,6 @@ namespace DAC
         /// <param name="isDeliver"></param>
         private void Updata_Ability(string subjectName, string objectName, string ability, bool isDeliver)
         {
-
             OleDbConnection oleDB = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dac.accdb");
             oleDB.Open();
 
@@ -1057,8 +1026,6 @@ namespace DAC
             cmd.ExecuteNonQuery();
 
             oleDB.Close();
-
-
         }
         /// <summary>
         /// 从访问控制矩阵中删除一个信息
@@ -1070,8 +1037,6 @@ namespace DAC
         /// <param name="isDeliver"></param>
         private void Delete_Ability(string subjectName, string objectName, string ability, string subjectDeliver)
         {
-
-
             OleDbConnection oleDB = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dac.accdb");
             oleDB.Open();
 
@@ -1083,8 +1048,6 @@ namespace DAC
             cmd.ExecuteNonQuery();
 
             oleDB.Close();
-
-
         }
         /// <summary>
         /// 从访问控制矩阵中删除一个信息
@@ -1096,8 +1059,6 @@ namespace DAC
         /// <param name="isDeliver"></param>
         private void Delete_Ability_From_Deliver(string subjectName, string objectName, string ability)
         {
-
-
             OleDbConnection oleDB = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dac.accdb");
             oleDB.Open();
 
@@ -1105,12 +1066,9 @@ namespace DAC
             cmd.Connection = oleDB;
             cmd.CommandText = "delete from  [访问控制矩阵表] where 权限授予者=" + "'" + subjectName + "'" + "and 客体名称=" + "'" + objectName + "'" + "and 权限=" + "'" + ability + "'";
 
-
             cmd.ExecuteNonQuery();
 
             oleDB.Close();
-
-
         }
 
         /// <summary>
@@ -1154,7 +1112,6 @@ namespace DAC
             dr.Close();
             oleDB.Close();
             return isUsed;
-
         }
 
         private void Btn_Creat_Click(object sender, EventArgs e)
@@ -1165,7 +1122,6 @@ namespace DAC
                 Refresh_Object_Add();
 
                 return;
-
             }
             else
             {
@@ -1187,13 +1143,11 @@ namespace DAC
         /// </summary>   
         private static void Insert_Ability_table(string subjectName,string objectName,string ability, bool isCanDeliver,string Deliver )
         {
-
             OleDbConnection oleDB = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dac.accdb");
             oleDB.Open();
 
             OleDbCommand cmd = new OleDbCommand();
             cmd.Connection = oleDB;
-           
            
             // 增加到主体信息表中
             cmd.CommandText = "insert into  [访问控制矩阵表](主体名称,客体名称,权限,授予权,权限授予者) values('"
@@ -1208,7 +1162,6 @@ namespace DAC
         /// <param name="objectName"></param>
         private static void Insert_Object_Info(string subjectName, string objectName)
         {
-
             OleDbConnection oleDB = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dac.accdb");
             oleDB.Open();
 
@@ -1244,11 +1197,7 @@ namespace DAC
                 while (dr.Read())
                 {
                     this.Combox_DeleteObject.Items.Add(dr["客体名称"]);
-                             
-
                 }
-
-
             }
 
             if (this.Combox_DeleteObject.Items.Count != 0)
@@ -1271,8 +1220,6 @@ namespace DAC
         /// <param name="objectName"></param>
         private void Delete_Object( string objectName )
         {
-
-
             OleDbConnection oleDB = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dac.accdb");
             oleDB.Open();
 
@@ -1285,7 +1232,6 @@ namespace DAC
             cmd.CommandText = "delete from  [黑令牌表] where  客体名称=" + "'" + objectName + "'";
             cmd.ExecuteNonQuery();
             oleDB.Close();
-
         }
         /// <summary>
         /// 以下是删除主体的选项卡代码
@@ -1307,13 +1253,8 @@ namespace DAC
             {
                 while (dr.Read())
                 {
-
                     this.Combox_DeleteSubject.Items.Add(dr["主体名称"]);
-
-
                 }
-
-
             }
             this.Combox_DeleteSubject.Items.Remove("admin");
             if (this.Combox_DeleteSubject.Items.Count != 0)
@@ -1349,7 +1290,6 @@ namespace DAC
         /// <returns></returns>
         private LinkedList<StoreAbility> Get_Subject_Object(string subjectName)
         {
-
             LinkedList<StoreAbility> Link = new LinkedList<StoreAbility>();
 
             OleDbConnection oleDB = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dac.accdb");
@@ -1364,7 +1304,6 @@ namespace DAC
                 {
                     if (string.Equals(dr["主体名称"], subjectName) == false)
                     {
-
                         StoreAbility S = new StoreAbility(dr["主体名称"].ToString(), dr["客体名称"].ToString(), dr["权限"].ToString(), dr["权限授予者"].ToString(), true);
                         Link.AddFirst(S);
 
@@ -1383,8 +1322,6 @@ namespace DAC
         /// <param name="objectName"></param>
         private void Delete_Subject(string subjectName)
         {
-
-
             OleDbConnection oleDB = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dac.accdb");
             oleDB.Open();
 
@@ -1397,7 +1334,6 @@ namespace DAC
                 cmd.CommandText = "delete from  [黑令牌表] where  客体名称=" + "'" + Card.First.Value + "'";
                 cmd.ExecuteNonQuery();
                 Card.RemoveFirst();
-             
              }
 
             cmd.CommandText = "delete from  [访问控制矩阵表] where  主体名称=" + "'" + subjectName.ToLower() + "'";
@@ -1408,7 +1344,6 @@ namespace DAC
             cmd.ExecuteNonQuery();
 
             oleDB.Close();
-
         }
 
 
@@ -1418,7 +1353,6 @@ namespace DAC
         /// </summary>
         private void Refresh_SubjectRegister()
         {
-
             this.Combox_SubjectRegister.Items.Clear();
             this.RegisterTime.Text = "";
 
@@ -1435,12 +1369,8 @@ namespace DAC
             {
                 while (dr.Read())
                 {
-
                     this.Combox_SubjectRegister.Items.Add(dr["主体名称"]);//    增加到下拉框中            
-
                 }
-
-
             }
 
             if (this.Combox_SubjectRegister.Items.Count != 0)
@@ -1449,7 +1379,6 @@ namespace DAC
             }
             dr.Close();
             oleDB.Close();
-
         }
 
         private void Combox_SubjectRegister_SelectedIndexChanged(object sender, EventArgs e)
@@ -1466,12 +1395,8 @@ namespace DAC
             {
                 if (dr.Read())
                 {
-
                     this.RegisterTime.Text = dr["注册时间"].ToString();
-
                 }
-
-
             }
             dr.Close();
             oleDB.Close();
@@ -1481,7 +1406,6 @@ namespace DAC
         {
             if (this.Combox_SubjectRegister.Text.Length == 0)
             {
-
                 MessageBox.Show(this, "还未选中任何注册主体", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -1497,14 +1421,12 @@ namespace DAC
             }
             oleDB.Close();
             Refresh_SubjectRegister();
-
         }
 
         private void btn_Register_Sure_Click(object sender, EventArgs e)
         {
             if (this.Combox_SubjectRegister.Text.Length == 0)
             {
-
                 MessageBox.Show(this, "还未选中任何主体", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -1512,7 +1434,6 @@ namespace DAC
             Insert_Subject_Info(this.Combox_SubjectRegister.Text);
             MessageBox.Show("增加该用户成功！，按确定返回", "成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Refresh_SubjectRegister();
-
         }
 
         /// <summary>
@@ -1520,7 +1441,6 @@ namespace DAC
         /// </summary>   
         private static void Insert_Subject_Info(string subjectName)
         {
-
             OleDbConnection oleDB = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dac.accdb");
             oleDB.Open();
 
@@ -1537,10 +1457,7 @@ namespace DAC
                 {
                     pwd = dr["密码"].ToString();
                     time = dr["注册时间"].ToString();
-
                 }
-
-
             }
             dr.Close();
             //删除在注册管理表中的信息
@@ -1577,19 +1494,14 @@ namespace DAC
             }
             oleDB.Close();
 
-
             return isSuccess;
         }
-
-
-
 
 
         private void AbilityTable_Selected(object sender, TabControlEventArgs e)
         {
             switch (e.TabPageIndex)
             {
-
                 case 0:
                     {
                         Refresh__AuthorityTable();
@@ -1603,7 +1515,6 @@ namespace DAC
                 case 2:
                     {
                         Refresh__Abillity_Manage(0, 0);
-
                         break;
                     }
                 case 3:
@@ -1651,7 +1562,6 @@ namespace DAC
             register.Text = "设置普通用户账号及密码";
             register.isAdmin = false;
             register.ShowDialog();
-               
         }
 
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1712,11 +1622,8 @@ namespace DAC
             this.AbilityTable.SelectedIndex = 4;
         }
 
-
         private void Refresh_Limit_Card(int index_Subject,int index_Object)
-        {
-
-          
+        {  
             this.DataGridView_LimitCard.Rows.Clear();
             this.ComboBox_LimtCard_Object.Items.Clear();
             this.ComboBox_LimtCard_Subject.Items.Clear();
@@ -1734,11 +1641,8 @@ namespace DAC
             {
                 while (dr.Read())
                 {
-
                     this.ComboBox_LimtCard_Subject.Items.Add(dr["主体名称"]);//    增加到下拉框中            
-
                 }
-
             }
 
             this.ComboBox_LimtCard_Subject.Items.Remove(this.GetSubjectName);//移除自身
@@ -1766,11 +1670,9 @@ namespace DAC
                    this.DataGridView_LimitCard.Rows.Add(r);
                    Subject_Link.RemoveFirst();
                    Ability_Link.RemoveFirst();
-                
                 }
                
                Object_Link.RemoveFirst();
-
            }
 
            if (this.ComboBox_LimtCard_Object.Items.Count != 0)
@@ -1801,9 +1703,7 @@ namespace DAC
                 while (dr.Read())
                 {
                     L.AddLast(dr["客体名称"].ToString());
-
                 }
-
             }          
             dr.Close();
 
@@ -1819,7 +1719,6 @@ namespace DAC
         {
             LinkedList<string> L = new LinkedList<string>();
 
-           
             OleDbConnection oleDB = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dac.accdb");
             oleDB.Open();
 
@@ -1834,9 +1733,7 @@ namespace DAC
                 {
                     L.AddLast(dr["限制权限"].ToString());
                     subject_Link.AddLast(dr["主体名称"].ToString());
-
                 }
-
             }
             dr.Close();
 
@@ -1855,7 +1752,6 @@ namespace DAC
         }
         private void Refresh_LimitCard()
         {
-
             this.CheckedListBox_LimitCard_Add.Items.Clear();
             this.CheckedListBox_LimitCard_Delete.Items.Clear();
        
@@ -1874,7 +1770,6 @@ namespace DAC
                 {
                     this.CheckedListBox_LimitCard_Delete.Items.Add(dr["限制权限"]);   
                 }
-
             }
             foreach(var  v in  ABILITY )
             {
@@ -1886,7 +1781,6 @@ namespace DAC
             dr.Close();
 
             oleDB.Close();
-
         }
 
         private void Btn_LimitCard_Delete_Click(object sender, EventArgs e)
@@ -1901,7 +1795,6 @@ namespace DAC
                Delete_Limit_Card(this.ComboBox_LimtCard_Subject.Text, this.ComboBox_LimtCard_Object.Text, v.ToString());
             }
 
-
             Refresh_Limit_Card(this.ComboBox_LimtCard_Subject.SelectedIndex, this.ComboBox_LimtCard_Object.SelectedIndex);
         }
 
@@ -1911,7 +1804,6 @@ namespace DAC
             {
                 MessageBox.Show(this, "还未选择任何权限，请重新选择", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-             
             }
             foreach (var v in this.CheckedListBox_LimitCard_Add.CheckedItems) //要发放的黑令牌中 主体已经有了该权限，则不能添加黑令牌
             {
@@ -1928,8 +1820,14 @@ namespace DAC
             }
             Refresh_Limit_Card(this.ComboBox_LimtCard_Subject.SelectedIndex, this.ComboBox_LimtCard_Object.SelectedIndex);
         }
-         
-        private void Insert_Limit_Card(string subjectName,string objectName,string ability)
+       /// <summary>
+       /// 黑令牌的添加
+       /// </summary>
+       /// <param name="subjectName"></param>
+       /// <param name="objectName"></param>
+       /// <param name="ability"></param>
+  
+       private void Insert_Limit_Card(string subjectName,string objectName,string ability)
        {
            OleDbConnection oleDB = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dac.accdb");
            oleDB.Open();
@@ -1937,12 +1835,17 @@ namespace DAC
            OleDbCommand cmd = new OleDbCommand();
            cmd.Connection = oleDB;
 
-
            // 增加到主体信息表中
            cmd.CommandText = "insert into  [黑令牌表](主体名称,客体名称,限制权限) values('" + subjectName.ToLower() + "','" + objectName.ToLower()+ "','" +ability + "')";
            cmd.ExecuteNonQuery();
            oleDB.Close();
         }
+        /// <summary>
+        /// 黑令牌的删除
+        /// </summary>
+        /// <param name="subjectName"></param>
+        /// <param name="objectName"></param>
+        /// <param name="ability"></param>
         private void Delete_Limit_Card(string subjectName, string objectName, string ability)
         {
             OleDbConnection oleDB = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dac.accdb");
@@ -1967,11 +1870,30 @@ namespace DAC
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
        
     }
     //存储权限的类
     class StoreAbility
-
     {
         public string Subject_Name = string.Empty;//主体名称
         public string Object_Name = string.Empty;//客体名称
@@ -1993,11 +1915,7 @@ namespace DAC
             this.Ability_Name = Ability_Name;
             this.Name_Deliver = Name_Deliver ;
             this.IsDeliver = IsDeliver;
-
-
-
         }
-
     }
 }
  

@@ -49,20 +49,20 @@
             this.重新登录NToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.注册ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.添加ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.SToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.客体OToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.管理MToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.RToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.权限回收SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.授予ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查询IToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.授权标TToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.授权链LToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.主客查询SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.添加ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.客体OToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.删除DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.客体OToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.管理MToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.RToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.权限回收SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.授予ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AbilityTable = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.DataGridView_AuthorityData = new System.Windows.Forms.DataGridView();
@@ -80,32 +80,31 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.ComboBox_Subject_Inquiry = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.ComboBox_Object_Inquiry = new System.Windows.Forms.ComboBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.Btn_Ability_Add = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.Btn_Ability_Delete = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
+            this.ComboBox_Subject_Manage = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.CheckedListBox_Ability_Deliver_Add = new System.Windows.Forms.CheckedListBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.CheckedListBox_Ability_Add = new System.Windows.Forms.CheckedListBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.CheckedListBox_Ability_Deliver_Delete = new System.Windows.Forms.CheckedListBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.CheckedListBox_Ability_Delete = new System.Windows.Forms.CheckedListBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ComboBox_Subject_Manage = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.ComboBox_Object_Manage = new System.Windows.Forms.ComboBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.CheckedListBox_Ability_Deliver_Delete = new System.Windows.Forms.CheckedListBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.CheckedListBox_Ability_Add = new System.Windows.Forms.CheckedListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.CheckedListBox_Ability_Delete = new System.Windows.Forms.CheckedListBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.Label_Warning_Object_Name = new System.Windows.Forms.Label();
             this.Btn_Exit = new System.Windows.Forms.Button();
@@ -125,15 +124,15 @@
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel10 = new System.Windows.Forms.Panel();
             this.CheckedListBox_LimitCard_Add = new System.Windows.Forms.CheckedListBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.CheckedListBox_LimitCard_Delete = new System.Windows.Forms.CheckedListBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.ComboBox_LimtCard_Subject = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.ComboBox_LimtCard_Object = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.DeleteSubjectEnter = new System.Windows.Forms.Button();
             this.Combox_DeleteSubject = new System.Windows.Forms.ComboBox();
@@ -158,11 +157,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_Ability_Inquiry)).BeginInit();
             this.panel2.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage8.SuspendLayout();
@@ -204,77 +203,23 @@
             // 重新登录NToolStripMenuItem
             // 
             this.重新登录NToolStripMenuItem.Name = "重新登录NToolStripMenuItem";
-            this.重新登录NToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.重新登录NToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.重新登录NToolStripMenuItem.Text = "重新登录(&R)";
             this.重新登录NToolStripMenuItem.Click += new System.EventHandler(this.重新登录NToolStripMenuItem_Click);
             // 
             // 注册ToolStripMenuItem
             // 
             this.注册ToolStripMenuItem.Name = "注册ToolStripMenuItem";
-            this.注册ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.注册ToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.注册ToolStripMenuItem.Text = "注册账号(&S)";
             this.注册ToolStripMenuItem.Click += new System.EventHandler(this.注册ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.退出ToolStripMenuItem.Text = "退出(&E)";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
-            // 
-            // 添加ToolStripMenuItem
-            // 
-            this.添加ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.SToolStripMenuItem2,
-            this.客体OToolStripMenuItem});
-            this.添加ToolStripMenuItem.Name = "添加ToolStripMenuItem";
-            this.添加ToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.添加ToolStripMenuItem.Text = "添加(&A)";
-            // 
-            // SToolStripMenuItem2
-            // 
-            this.SToolStripMenuItem2.Name = "SToolStripMenuItem2";
-            this.SToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.SToolStripMenuItem2.Text = "主体(&S)";
-            this.SToolStripMenuItem2.Click += new System.EventHandler(this.主体SToolStripMenuItem_Click);
-            // 
-            // 客体OToolStripMenuItem
-            // 
-            this.客体OToolStripMenuItem.Name = "客体OToolStripMenuItem";
-            this.客体OToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.客体OToolStripMenuItem.Text = "客体(&O)";
-            this.客体OToolStripMenuItem.Click += new System.EventHandler(this.客体OToolStripMenuItem_Click);
-            // 
-            // 管理MToolStripMenuItem
-            // 
-            this.管理MToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.RToolStripMenuItem1,
-            this.权限回收SToolStripMenuItem,
-            this.授予ToolStripMenuItem});
-            this.管理MToolStripMenuItem.Name = "管理MToolStripMenuItem";
-            this.管理MToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.管理MToolStripMenuItem.Text = "管理(&M)";
-            // 
-            // RToolStripMenuItem1
-            // 
-            this.RToolStripMenuItem1.Name = "RToolStripMenuItem1";
-            this.RToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.RToolStripMenuItem1.Text = "注册管理(&R)";
-            this.RToolStripMenuItem1.Click += new System.EventHandler(this.注册管理RToolStripMenuItem_Click);
-            // 
-            // 权限回收SToolStripMenuItem
-            // 
-            this.权限回收SToolStripMenuItem.Name = "权限回收SToolStripMenuItem";
-            this.权限回收SToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.权限回收SToolStripMenuItem.Text = "权限回收(&S)";
-            this.权限回收SToolStripMenuItem.Click += new System.EventHandler(this.权限回收SToolStripMenuItem_Click);
-            // 
-            // 授予ToolStripMenuItem
-            // 
-            this.授予ToolStripMenuItem.Name = "授予ToolStripMenuItem";
-            this.授予ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.授予ToolStripMenuItem.Text = "授予权限(&A)";
-            this.授予ToolStripMenuItem.Click += new System.EventHandler(this.授予ToolStripMenuItem_Click);
             // 
             // 查询IToolStripMenuItem
             // 
@@ -289,23 +234,46 @@
             // 授权标TToolStripMenuItem
             // 
             this.授权标TToolStripMenuItem.Name = "授权标TToolStripMenuItem";
-            this.授权标TToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.授权标TToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.授权标TToolStripMenuItem.Text = "授权表(&T)";
             this.授权标TToolStripMenuItem.Click += new System.EventHandler(this.授权标TToolStripMenuItem_Click);
             // 
             // 授权链LToolStripMenuItem
             // 
             this.授权链LToolStripMenuItem.Name = "授权链LToolStripMenuItem";
-            this.授权链LToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.授权链LToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.授权链LToolStripMenuItem.Text = "授权链(&L)";
             this.授权链LToolStripMenuItem.Click += new System.EventHandler(this.授权链LToolStripMenuItem_Click);
             // 
             // 主客查询SToolStripMenuItem
             // 
             this.主客查询SToolStripMenuItem.Name = "主客查询SToolStripMenuItem";
-            this.主客查询SToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.主客查询SToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.主客查询SToolStripMenuItem.Text = "主客查询(&S)";
             this.主客查询SToolStripMenuItem.Click += new System.EventHandler(this.主客查询SToolStripMenuItem_Click);
+            // 
+            // 添加ToolStripMenuItem
+            // 
+            this.添加ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SToolStripMenuItem2,
+            this.客体OToolStripMenuItem});
+            this.添加ToolStripMenuItem.Name = "添加ToolStripMenuItem";
+            this.添加ToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.添加ToolStripMenuItem.Text = "添加(&A)";
+            // 
+            // SToolStripMenuItem2
+            // 
+            this.SToolStripMenuItem2.Name = "SToolStripMenuItem2";
+            this.SToolStripMenuItem2.Size = new System.Drawing.Size(115, 22);
+            this.SToolStripMenuItem2.Text = "主体(&S)";
+            this.SToolStripMenuItem2.Click += new System.EventHandler(this.主体SToolStripMenuItem_Click);
+            // 
+            // 客体OToolStripMenuItem
+            // 
+            this.客体OToolStripMenuItem.Name = "客体OToolStripMenuItem";
+            this.客体OToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.客体OToolStripMenuItem.Text = "客体(&O)";
+            this.客体OToolStripMenuItem.Click += new System.EventHandler(this.客体OToolStripMenuItem_Click);
             // 
             // 删除DToolStripMenuItem
             // 
@@ -319,16 +287,47 @@
             // SToolStripMenuItem1
             // 
             this.SToolStripMenuItem1.Name = "SToolStripMenuItem1";
-            this.SToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.SToolStripMenuItem1.Size = new System.Drawing.Size(115, 22);
             this.SToolStripMenuItem1.Text = "主体(&S)";
             this.SToolStripMenuItem1.Click += new System.EventHandler(this.主体SToolStripMenuItem1_Click);
             // 
             // 客体OToolStripMenuItem1
             // 
             this.客体OToolStripMenuItem1.Name = "客体OToolStripMenuItem1";
-            this.客体OToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.客体OToolStripMenuItem1.Size = new System.Drawing.Size(115, 22);
             this.客体OToolStripMenuItem1.Text = "客体(&O)";
             this.客体OToolStripMenuItem1.Click += new System.EventHandler(this.客体OToolStripMenuItem1_Click);
+            // 
+            // 管理MToolStripMenuItem
+            // 
+            this.管理MToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.RToolStripMenuItem1,
+            this.权限回收SToolStripMenuItem,
+            this.授予ToolStripMenuItem});
+            this.管理MToolStripMenuItem.Name = "管理MToolStripMenuItem";
+            this.管理MToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.管理MToolStripMenuItem.Text = "管理(&M)";
+            // 
+            // RToolStripMenuItem1
+            // 
+            this.RToolStripMenuItem1.Name = "RToolStripMenuItem1";
+            this.RToolStripMenuItem1.Size = new System.Drawing.Size(138, 22);
+            this.RToolStripMenuItem1.Text = "注册管理(&R)";
+            this.RToolStripMenuItem1.Click += new System.EventHandler(this.注册管理RToolStripMenuItem_Click);
+            // 
+            // 权限回收SToolStripMenuItem
+            // 
+            this.权限回收SToolStripMenuItem.Name = "权限回收SToolStripMenuItem";
+            this.权限回收SToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.权限回收SToolStripMenuItem.Text = "权限回收(&S)";
+            this.权限回收SToolStripMenuItem.Click += new System.EventHandler(this.权限回收SToolStripMenuItem_Click);
+            // 
+            // 授予ToolStripMenuItem
+            // 
+            this.授予ToolStripMenuItem.Name = "授予ToolStripMenuItem";
+            this.授予ToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.授予ToolStripMenuItem.Text = "授予权限(&A)";
+            this.授予ToolStripMenuItem.Click += new System.EventHandler(this.授予ToolStripMenuItem_Click);
             // 
             // AbilityTable
             // 
@@ -347,7 +346,7 @@
             this.AbilityTable.Name = "AbilityTable";
             this.AbilityTable.Padding = new System.Drawing.Point(4, 0);
             this.AbilityTable.SelectedIndex = 0;
-            this.AbilityTable.Size = new System.Drawing.Size(709, 347);
+            this.AbilityTable.Size = new System.Drawing.Size(709, 346);
             this.AbilityTable.TabIndex = 3;
             this.AbilityTable.Selected += new System.Windows.Forms.TabControlEventHandler(this.AbilityTable_Selected);
             // 
@@ -357,7 +356,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(701, 309);
+            this.tabPage2.Size = new System.Drawing.Size(701, 308);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "授权表";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -369,7 +368,7 @@
             this.DataGridView_AuthorityData.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.DataGridView_AuthorityData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGridView_AuthorityData.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.DataGridView_AuthorityData.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -406,7 +405,7 @@
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.DataGridView_AuthorityData.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGridView_AuthorityData.RowTemplate.Height = 23;
-            this.DataGridView_AuthorityData.Size = new System.Drawing.Size(695, 303);
+            this.DataGridView_AuthorityData.Size = new System.Drawing.Size(695, 302);
             this.DataGridView_AuthorityData.TabIndex = 1;
             this.DataGridView_AuthorityData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_AuthorityData_CellContentClick);
             // 
@@ -469,12 +468,11 @@
             // 
             this.tabPage3.BackColor = System.Drawing.SystemColors.Window;
             this.tabPage3.Controls.Add(this.DataGridView_Ability_Inquiry);
-            this.tabPage3.Controls.Add(this.label4);
             this.tabPage3.Controls.Add(this.panel2);
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(701, 309);
+            this.tabPage3.Size = new System.Drawing.Size(701, 308);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "授权查询";
             // 
@@ -485,7 +483,7 @@
             this.DataGridView_Ability_Inquiry.AllowUserToOrderColumns = true;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.DataGridView_Ability_Inquiry.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.DataGridView_Ability_Inquiry.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.DataGridView_Ability_Inquiry.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle7.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -508,7 +506,7 @@
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridView_Ability_Inquiry.DefaultCellStyle = dataGridViewCellStyle9;
-            this.DataGridView_Ability_Inquiry.Location = new System.Drawing.Point(51, 102);
+            this.DataGridView_Ability_Inquiry.Location = new System.Drawing.Point(6, 42);
             this.DataGridView_Ability_Inquiry.MultiSelect = false;
             this.DataGridView_Ability_Inquiry.Name = "DataGridView_Ability_Inquiry";
             this.DataGridView_Ability_Inquiry.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -516,14 +514,14 @@
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.DataGridView_Ability_Inquiry.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.DataGridView_Ability_Inquiry.RowTemplate.Height = 23;
-            this.DataGridView_Ability_Inquiry.Size = new System.Drawing.Size(574, 213);
+            this.DataGridView_Ability_Inquiry.Size = new System.Drawing.Size(687, 263);
             this.DataGridView_Ability_Inquiry.TabIndex = 26;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.HeaderText = "   权限";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 75;
+            this.dataGridViewTextBoxColumn6.Width = 80;
             // 
             // Column3
             // 
@@ -539,23 +537,12 @@
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             this.dataGridViewTextBoxColumn8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn8.Width = 300;
+            this.dataGridViewTextBoxColumn8.Width = 400;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "   授予权";
             this.Column2.Name = "Column2";
-            this.Column2.Width = 90;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(47, 79);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 20);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "权限链";
             // 
             // panel2
             // 
@@ -564,16 +551,17 @@
             this.panel2.Controls.Add(this.ComboBox_Subject_Inquiry);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.ComboBox_Object_Inquiry);
-            this.panel2.Location = new System.Drawing.Point(51, 16);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(574, 42);
+            this.panel2.Size = new System.Drawing.Size(695, 302);
             this.panel2.TabIndex = 22;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Location = new System.Drawing.Point(21, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 20);
             this.label1.TabIndex = 6;
@@ -587,7 +575,7 @@
             this.ComboBox_Subject_Inquiry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_Subject_Inquiry.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ComboBox_Subject_Inquiry.FormattingEnabled = true;
-            this.ComboBox_Subject_Inquiry.Location = new System.Drawing.Point(77, 9);
+            this.ComboBox_Subject_Inquiry.Location = new System.Drawing.Point(95, 9);
             this.ComboBox_Subject_Inquiry.MaxLength = 100;
             this.ComboBox_Subject_Inquiry.Name = "ComboBox_Subject_Inquiry";
             this.ComboBox_Subject_Inquiry.Size = new System.Drawing.Size(202, 22);
@@ -598,11 +586,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(285, 8);
+            this.label2.Location = new System.Drawing.Point(395, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "客体名称:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // ComboBox_Object_Inquiry
             // 
@@ -612,7 +601,7 @@
             this.ComboBox_Object_Inquiry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_Object_Inquiry.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ComboBox_Object_Inquiry.FormattingEnabled = true;
-            this.ComboBox_Object_Inquiry.Location = new System.Drawing.Point(359, 8);
+            this.ComboBox_Object_Inquiry.Location = new System.Drawing.Point(469, 10);
             this.ComboBox_Object_Inquiry.MaxLength = 100;
             this.ComboBox_Object_Inquiry.Name = "ComboBox_Object_Inquiry";
             this.ComboBox_Object_Inquiry.Size = new System.Drawing.Size(202, 22);
@@ -622,23 +611,36 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.Window;
-            this.tabPage1.Controls.Add(this.Btn_Ability_Add);
-            this.tabPage1.Controls.Add(this.Btn_Ability_Delete);
-            this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.panel7);
-            this.tabPage1.Controls.Add(this.panel6);
-            this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.panel5);
-            this.tabPage1.Controls.Add(this.panel4);
             this.tabPage1.Controls.Add(this.panel3);
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(701, 309);
+            this.tabPage1.Size = new System.Drawing.Size(701, 308);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "授权管理";
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.Btn_Ability_Add);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.Btn_Ability_Delete);
+            this.panel3.Controls.Add(this.ComboBox_Subject_Manage);
+            this.panel3.Controls.Add(this.panel7);
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.ComboBox_Object_Manage);
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel6);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(695, 302);
+            this.panel3.TabIndex = 23;
             // 
             // Btn_Ability_Add
             // 
@@ -647,14 +649,25 @@
             this.Btn_Ability_Add.FlatAppearance.BorderSize = 0;
             this.Btn_Ability_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Ability_Add.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Btn_Ability_Add.Location = new System.Drawing.Point(594, 243);
+            this.Btn_Ability_Add.Location = new System.Drawing.Point(302, 81);
             this.Btn_Ability_Add.Name = "Btn_Ability_Add";
             this.Btn_Ability_Add.Size = new System.Drawing.Size(87, 28);
             this.Btn_Ability_Add.TabIndex = 33;
             this.Btn_Ability_Add.TabStop = false;
-            this.Btn_Ability_Add.Text = "增加";
+            this.Btn_Ability_Add.Text = "--→";
             this.Btn_Ability_Add.UseVisualStyleBackColor = false;
             this.Btn_Ability_Add.Click += new System.EventHandler(this.Btn_Ability_Add_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(43, 8);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 20);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "主体名称:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Btn_Ability_Delete
             // 
@@ -663,30 +676,35 @@
             this.Btn_Ability_Delete.FlatAppearance.BorderSize = 0;
             this.Btn_Ability_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Ability_Delete.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Btn_Ability_Delete.Location = new System.Drawing.Point(594, 122);
+            this.Btn_Ability_Delete.Location = new System.Drawing.Point(302, 212);
             this.Btn_Ability_Delete.Name = "Btn_Ability_Delete";
             this.Btn_Ability_Delete.Size = new System.Drawing.Size(87, 28);
             this.Btn_Ability_Delete.TabIndex = 32;
             this.Btn_Ability_Delete.TabStop = false;
-            this.Btn_Ability_Delete.Text = "删 除";
+            this.Btn_Ability_Delete.Text = "←--";
             this.Btn_Ability_Delete.UseVisualStyleBackColor = false;
             this.Btn_Ability_Delete.Click += new System.EventHandler(this.Btn_Ability_Delete_Click);
             // 
-            // label14
+            // ComboBox_Subject_Manage
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label14.Location = new System.Drawing.Point(338, 188);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(121, 20);
-            this.label14.TabIndex = 31;
-            this.label14.Text = "可以的权限控制权";
+            this.ComboBox_Subject_Manage.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.ComboBox_Subject_Manage.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.ComboBox_Subject_Manage.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ComboBox_Subject_Manage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBox_Subject_Manage.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ComboBox_Subject_Manage.FormattingEnabled = true;
+            this.ComboBox_Subject_Manage.Location = new System.Drawing.Point(117, 8);
+            this.ComboBox_Subject_Manage.MaxLength = 100;
+            this.ComboBox_Subject_Manage.Name = "ComboBox_Subject_Manage";
+            this.ComboBox_Subject_Manage.Size = new System.Drawing.Size(202, 22);
+            this.ComboBox_Subject_Manage.TabIndex = 13;
+            this.ComboBox_Subject_Manage.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Subject_Manage_SelectedIndexChanged);
             // 
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel7.Controls.Add(this.CheckedListBox_Ability_Deliver_Add);
-            this.panel7.Location = new System.Drawing.Point(342, 210);
+            this.panel7.Location = new System.Drawing.Point(47, 192);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(235, 101);
             this.panel7.TabIndex = 30;
@@ -701,60 +719,46 @@
             this.CheckedListBox_Ability_Deliver_Add.Size = new System.Drawing.Size(234, 100);
             this.CheckedListBox_Ability_Deliver_Add.TabIndex = 28;
             // 
-            // panel6
+            // label14
             // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel6.Controls.Add(this.CheckedListBox_Ability_Add);
-            this.panel6.Location = new System.Drawing.Point(51, 211);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(235, 101);
-            this.panel6.TabIndex = 29;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label14.Location = new System.Drawing.Point(43, 169);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(149, 20);
+            this.label14.TabIndex = 31;
+            this.label14.Text = "可以授予的权限控制权";
             // 
-            // CheckedListBox_Ability_Add
+            // label7
             // 
-            this.CheckedListBox_Ability_Add.BackColor = System.Drawing.SystemColors.Window;
-            this.CheckedListBox_Ability_Add.CheckOnClick = true;
-            this.CheckedListBox_Ability_Add.FormattingEnabled = true;
-            this.CheckedListBox_Ability_Add.Location = new System.Drawing.Point(-2, -2);
-            this.CheckedListBox_Ability_Add.Name = "CheckedListBox_Ability_Add";
-            this.CheckedListBox_Ability_Add.Size = new System.Drawing.Size(234, 100);
-            this.CheckedListBox_Ability_Add.TabIndex = 28;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.Location = new System.Drawing.Point(369, 8);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(68, 20);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "客体名称:";
             // 
-            // label12
+            // ComboBox_Object_Manage
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label12.Location = new System.Drawing.Point(47, 188);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(107, 20);
-            this.label12.TabIndex = 27;
-            this.label12.Text = "可以授予的权限\r\n";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(338, 61);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(152, 20);
-            this.label6.TabIndex = 26;
-            this.label6.Text = "已有权限对应的控制权:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(47, 61);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 20);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "已有权限名称:";
+            this.ComboBox_Object_Manage.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.ComboBox_Object_Manage.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.ComboBox_Object_Manage.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ComboBox_Object_Manage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBox_Object_Manage.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ComboBox_Object_Manage.FormattingEnabled = true;
+            this.ComboBox_Object_Manage.Location = new System.Drawing.Point(443, 9);
+            this.ComboBox_Object_Manage.MaxLength = 100;
+            this.ComboBox_Object_Manage.Name = "ComboBox_Object_Manage";
+            this.ComboBox_Object_Manage.Size = new System.Drawing.Size(202, 22);
+            this.ComboBox_Object_Manage.TabIndex = 14;
+            this.ComboBox_Object_Manage.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Object_Manage_SelectedIndexChanged);
             // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel5.Controls.Add(this.CheckedListBox_Ability_Deliver_Delete);
-            this.panel5.Location = new System.Drawing.Point(342, 83);
+            this.panel5.Location = new System.Drawing.Point(409, 191);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(235, 101);
             this.panel5.TabIndex = 25;
@@ -769,11 +773,60 @@
             this.CheckedListBox_Ability_Deliver_Delete.Size = new System.Drawing.Size(234, 100);
             this.CheckedListBox_Ability_Deliver_Delete.TabIndex = 28;
             // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel6.Controls.Add(this.CheckedListBox_Ability_Add);
+            this.panel6.Location = new System.Drawing.Point(47, 64);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(235, 101);
+            this.panel6.TabIndex = 29;
+            // 
+            // CheckedListBox_Ability_Add
+            // 
+            this.CheckedListBox_Ability_Add.BackColor = System.Drawing.SystemColors.Window;
+            this.CheckedListBox_Ability_Add.CheckOnClick = true;
+            this.CheckedListBox_Ability_Add.FormattingEnabled = true;
+            this.CheckedListBox_Ability_Add.Location = new System.Drawing.Point(-2, -2);
+            this.CheckedListBox_Ability_Add.Name = "CheckedListBox_Ability_Add";
+            this.CheckedListBox_Ability_Add.Size = new System.Drawing.Size(234, 100);
+            this.CheckedListBox_Ability_Add.TabIndex = 28;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(406, 41);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 20);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "已有权限名称:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label12.Location = new System.Drawing.Point(43, 41);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(107, 20);
+            this.label12.TabIndex = 27;
+            this.label12.Text = "可以授予的权限\r\n";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(406, 168);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(152, 20);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "已有权限对应的控制权:";
+            // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.CheckedListBox_Ability_Delete);
-            this.panel4.Location = new System.Drawing.Point(51, 84);
+            this.panel4.Location = new System.Drawing.Point(410, 64);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(235, 101);
             this.panel4.TabIndex = 24;
@@ -788,68 +841,6 @@
             this.CheckedListBox_Ability_Delete.Size = new System.Drawing.Size(234, 100);
             this.CheckedListBox_Ability_Delete.TabIndex = 27;
             // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.ComboBox_Subject_Manage);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.ComboBox_Object_Manage);
-            this.panel3.Location = new System.Drawing.Point(51, 16);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(574, 42);
-            this.panel3.TabIndex = 23;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(3, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 20);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "主体名称:";
-            // 
-            // ComboBox_Subject_Manage
-            // 
-            this.ComboBox_Subject_Manage.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
-            this.ComboBox_Subject_Manage.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.ComboBox_Subject_Manage.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ComboBox_Subject_Manage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBox_Subject_Manage.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ComboBox_Subject_Manage.FormattingEnabled = true;
-            this.ComboBox_Subject_Manage.Location = new System.Drawing.Point(77, 9);
-            this.ComboBox_Subject_Manage.MaxLength = 100;
-            this.ComboBox_Subject_Manage.Name = "ComboBox_Subject_Manage";
-            this.ComboBox_Subject_Manage.Size = new System.Drawing.Size(202, 22);
-            this.ComboBox_Subject_Manage.TabIndex = 13;
-            this.ComboBox_Subject_Manage.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Subject_Manage_SelectedIndexChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(285, 8);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 20);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "客体名称:";
-            // 
-            // ComboBox_Object_Manage
-            // 
-            this.ComboBox_Object_Manage.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
-            this.ComboBox_Object_Manage.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.ComboBox_Object_Manage.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ComboBox_Object_Manage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBox_Object_Manage.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ComboBox_Object_Manage.FormattingEnabled = true;
-            this.ComboBox_Object_Manage.Location = new System.Drawing.Point(359, 8);
-            this.ComboBox_Object_Manage.MaxLength = 100;
-            this.ComboBox_Object_Manage.Name = "ComboBox_Object_Manage";
-            this.ComboBox_Object_Manage.Size = new System.Drawing.Size(202, 22);
-            this.ComboBox_Object_Manage.TabIndex = 14;
-            this.ComboBox_Object_Manage.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Object_Manage_SelectedIndexChanged);
-            // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.SystemColors.Window;
@@ -861,7 +852,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(701, 309);
+            this.tabPage4.Size = new System.Drawing.Size(701, 308);
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "新建客体";
             // 
@@ -939,7 +930,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 34);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(701, 309);
+            this.tabPage5.Size = new System.Drawing.Size(701, 308);
             this.tabPage5.TabIndex = 5;
             this.tabPage5.Text = "删除客体";
             // 
@@ -986,18 +977,12 @@
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.SystemColors.Window;
-            this.tabPage8.Controls.Add(this.Btn_LimitCard_Delete);
-            this.tabPage8.Controls.Add(this.Btn_LimitCard_Add);
             this.tabPage8.Controls.Add(this.DataGridView_LimitCard);
-            this.tabPage8.Controls.Add(this.panel10);
-            this.tabPage8.Controls.Add(this.label18);
-            this.tabPage8.Controls.Add(this.panel9);
-            this.tabPage8.Controls.Add(this.label17);
             this.tabPage8.Controls.Add(this.panel8);
             this.tabPage8.Location = new System.Drawing.Point(4, 34);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(701, 309);
+            this.tabPage8.Size = new System.Drawing.Size(701, 308);
             this.tabPage8.TabIndex = 8;
             this.tabPage8.Text = "黑令牌";
             // 
@@ -1008,12 +993,12 @@
             this.Btn_LimitCard_Delete.FlatAppearance.BorderSize = 0;
             this.Btn_LimitCard_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_LimitCard_Delete.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Btn_LimitCard_Delete.Location = new System.Drawing.Point(416, 101);
+            this.Btn_LimitCard_Delete.Location = new System.Drawing.Point(443, 189);
             this.Btn_LimitCard_Delete.Name = "Btn_LimitCard_Delete";
             this.Btn_LimitCard_Delete.Size = new System.Drawing.Size(87, 28);
             this.Btn_LimitCard_Delete.TabIndex = 35;
             this.Btn_LimitCard_Delete.TabStop = false;
-            this.Btn_LimitCard_Delete.Text = "删 除";
+            this.Btn_LimitCard_Delete.Text = "←--";
             this.Btn_LimitCard_Delete.UseVisualStyleBackColor = false;
             this.Btn_LimitCard_Delete.Click += new System.EventHandler(this.Btn_LimitCard_Delete_Click);
             // 
@@ -1024,12 +1009,12 @@
             this.Btn_LimitCard_Add.FlatAppearance.BorderSize = 0;
             this.Btn_LimitCard_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_LimitCard_Add.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Btn_LimitCard_Add.Location = new System.Drawing.Point(480, 221);
+            this.Btn_LimitCard_Add.Location = new System.Drawing.Point(443, 91);
             this.Btn_LimitCard_Add.Name = "Btn_LimitCard_Add";
             this.Btn_LimitCard_Add.Size = new System.Drawing.Size(87, 28);
             this.Btn_LimitCard_Add.TabIndex = 34;
             this.Btn_LimitCard_Add.TabStop = false;
-            this.Btn_LimitCard_Add.Text = "增加";
+            this.Btn_LimitCard_Add.Text = "--→";
             this.Btn_LimitCard_Add.UseVisualStyleBackColor = false;
             this.Btn_LimitCard_Add.Click += new System.EventHandler(this.Btn_LimitCard_Add_Click);
             // 
@@ -1062,7 +1047,7 @@
             dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridView_LimitCard.DefaultCellStyle = dataGridViewCellStyle13;
-            this.DataGridView_LimitCard.Location = new System.Drawing.Point(3, 77);
+            this.DataGridView_LimitCard.Location = new System.Drawing.Point(24, 77);
             this.DataGridView_LimitCard.MultiSelect = false;
             this.DataGridView_LimitCard.Name = "DataGridView_LimitCard";
             this.DataGridView_LimitCard.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1070,34 +1055,32 @@
             dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.DataGridView_LimitCard.RowsDefaultCellStyle = dataGridViewCellStyle14;
             this.DataGridView_LimitCard.RowTemplate.Height = 23;
-            this.DataGridView_LimitCard.Size = new System.Drawing.Size(238, 244);
+            this.DataGridView_LimitCard.Size = new System.Drawing.Size(251, 226);
             this.DataGridView_LimitCard.TabIndex = 28;
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.HeaderText = "客体";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 50;
+            this.dataGridViewTextBoxColumn9.Width = 60;
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.HeaderText = "被限制的主体";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 90;
             // 
             // dataGridViewTextBoxColumn12
             // 
             this.dataGridViewTextBoxColumn12.HeaderText = "限制权限";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 90;
             // 
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel10.Controls.Add(this.CheckedListBox_LimitCard_Add);
-            this.panel10.Location = new System.Drawing.Point(509, 100);
+            this.panel10.Location = new System.Drawing.Point(291, 73);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(141, 101);
+            this.panel10.Size = new System.Drawing.Size(141, 226);
             this.panel10.TabIndex = 27;
             // 
             // CheckedListBox_LimitCard_Add
@@ -1106,28 +1089,18 @@
             this.CheckedListBox_LimitCard_Add.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CheckedListBox_LimitCard_Add.CheckOnClick = true;
             this.CheckedListBox_LimitCard_Add.FormattingEnabled = true;
-            this.CheckedListBox_LimitCard_Add.Location = new System.Drawing.Point(-2, -1);
+            this.CheckedListBox_LimitCard_Add.Location = new System.Drawing.Point(-2, -2);
             this.CheckedListBox_LimitCard_Add.Name = "CheckedListBox_LimitCard_Add";
-            this.CheckedListBox_LimitCard_Add.Size = new System.Drawing.Size(141, 98);
+            this.CheckedListBox_LimitCard_Add.Size = new System.Drawing.Size(141, 226);
             this.CheckedListBox_LimitCard_Add.TabIndex = 28;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label18.Location = new System.Drawing.Point(447, 77);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(96, 20);
-            this.label18.TabIndex = 27;
-            this.label18.Text = "增加权限限制:";
             // 
             // panel9
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel9.Controls.Add(this.CheckedListBox_LimitCard_Delete);
-            this.panel9.Location = new System.Drawing.Point(263, 100);
+            this.panel9.Location = new System.Drawing.Point(536, 73);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(141, 101);
+            this.panel9.Size = new System.Drawing.Size(141, 226);
             this.panel9.TabIndex = 26;
             // 
             // CheckedListBox_LimitCard_Delete
@@ -1136,38 +1109,36 @@
             this.CheckedListBox_LimitCard_Delete.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CheckedListBox_LimitCard_Delete.CheckOnClick = true;
             this.CheckedListBox_LimitCard_Delete.FormattingEnabled = true;
-            this.CheckedListBox_LimitCard_Delete.Location = new System.Drawing.Point(-1, -1);
+            this.CheckedListBox_LimitCard_Delete.Location = new System.Drawing.Point(-1, 0);
             this.CheckedListBox_LimitCard_Delete.Name = "CheckedListBox_LimitCard_Delete";
-            this.CheckedListBox_LimitCard_Delete.Size = new System.Drawing.Size(141, 98);
+            this.CheckedListBox_LimitCard_Delete.Size = new System.Drawing.Size(141, 226);
             this.CheckedListBox_LimitCard_Delete.TabIndex = 27;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label17.Location = new System.Drawing.Point(260, 77);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(110, 20);
-            this.label17.TabIndex = 25;
-            this.label17.Text = "已限制权限名称:";
             // 
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.Btn_LimitCard_Add);
             this.panel8.Controls.Add(this.label15);
+            this.panel8.Controls.Add(this.Btn_LimitCard_Delete);
             this.panel8.Controls.Add(this.ComboBox_LimtCard_Subject);
             this.panel8.Controls.Add(this.label16);
+            this.panel8.Controls.Add(this.panel10);
             this.panel8.Controls.Add(this.ComboBox_LimtCard_Object);
-            this.panel8.Location = new System.Drawing.Point(8, 26);
+            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Controls.Add(this.label18);
+            this.panel8.Controls.Add(this.label17);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel8.Location = new System.Drawing.Point(3, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(628, 42);
+            this.panel8.Size = new System.Drawing.Size(695, 302);
             this.panel8.TabIndex = 24;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label15.Location = new System.Drawing.Point(303, 8);
+            this.label15.Location = new System.Drawing.Point(359, 7);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(110, 20);
             this.label15.TabIndex = 6;
@@ -1181,7 +1152,7 @@
             this.ComboBox_LimtCard_Subject.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_LimtCard_Subject.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ComboBox_LimtCard_Subject.FormattingEnabled = true;
-            this.ComboBox_LimtCard_Subject.Location = new System.Drawing.Point(419, 7);
+            this.ComboBox_LimtCard_Subject.Location = new System.Drawing.Point(475, 5);
             this.ComboBox_LimtCard_Subject.MaxLength = 100;
             this.ComboBox_LimtCard_Subject.Name = "ComboBox_LimtCard_Subject";
             this.ComboBox_LimtCard_Subject.Size = new System.Drawing.Size(202, 22);
@@ -1192,11 +1163,12 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label16.Location = new System.Drawing.Point(3, 7);
+            this.label16.Location = new System.Drawing.Point(16, 8);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(68, 20);
             this.label16.TabIndex = 7;
             this.label16.Text = "客体名称:";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // ComboBox_LimtCard_Object
             // 
@@ -1206,12 +1178,32 @@
             this.ComboBox_LimtCard_Object.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_LimtCard_Object.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ComboBox_LimtCard_Object.FormattingEnabled = true;
-            this.ComboBox_LimtCard_Object.Location = new System.Drawing.Point(77, 6);
+            this.ComboBox_LimtCard_Object.Location = new System.Drawing.Point(97, 5);
             this.ComboBox_LimtCard_Object.MaxLength = 100;
             this.ComboBox_LimtCard_Object.Name = "ComboBox_LimtCard_Object";
             this.ComboBox_LimtCard_Object.Size = new System.Drawing.Size(202, 22);
             this.ComboBox_LimtCard_Object.TabIndex = 14;
             this.ComboBox_LimtCard_Object.SelectedIndexChanged += new System.EventHandler(this.ComboBox_LimtCard_Object_SelectedIndexChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label18.Location = new System.Drawing.Point(287, 50);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(82, 20);
+            this.label18.TabIndex = 27;
+            this.label18.Text = "未限制权限:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label17.Location = new System.Drawing.Point(532, 50);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(82, 20);
+            this.label17.TabIndex = 25;
+            this.label17.Text = "已限制权限:";
             // 
             // tabPage6
             // 
@@ -1222,7 +1214,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 34);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(701, 309);
+            this.tabPage6.Size = new System.Drawing.Size(701, 308);
             this.tabPage6.TabIndex = 6;
             this.tabPage6.Text = "删除主体";
             // 
@@ -1279,7 +1271,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 34);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(701, 309);
+            this.tabPage7.Size = new System.Drawing.Size(701, 308);
             this.tabPage7.TabIndex = 7;
             this.tabPage7.Text = "注册管理";
             // 
@@ -1403,6 +1395,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(709, 402);
             this.Controls.Add(this.AbilityTable);
             this.Controls.Add(this.panel1);
@@ -1420,24 +1413,21 @@
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_AuthorityData)).EndInit();
             this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_Ability_Inquiry)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.tabPage8.ResumeLayout(false);
-            this.tabPage8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_LimitCard)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
@@ -1506,7 +1496,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.Label Label_Warning_Object_Name;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView DataGridView_Ability_Inquiry;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Panel panel3;
@@ -1528,10 +1517,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button Btn_Ability_Delete;
         private System.Windows.Forms.Button Btn_Ability_Add;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.ToolStripMenuItem 添加ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem 客体OToolStripMenuItem;
@@ -1559,11 +1544,15 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.CheckedListBox CheckedListBox_LimitCard_Add;
         private System.Windows.Forms.DataGridView DataGridView_LimitCard;
+        private System.Windows.Forms.Button Btn_LimitCard_Delete;
+        private System.Windows.Forms.Button Btn_LimitCard_Add;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.Button Btn_LimitCard_Delete;
-        private System.Windows.Forms.Button Btn_LimitCard_Add;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
 
 
     }
