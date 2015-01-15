@@ -139,7 +139,6 @@
             this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 9;
             this.label1.Text = "确认密码";
-            //this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pwdWarning
             // 
@@ -156,13 +155,13 @@
             // userWaring
             // 
             this.userWaring.AutoSize = true;
+            this.userWaring.BackColor = System.Drawing.Color.Transparent;
             this.userWaring.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.userWaring.ForeColor = System.Drawing.Color.Red;
-            this.userWaring.Location = new System.Drawing.Point(245, 27);
+            this.userWaring.Location = new System.Drawing.Point(70, 49);
             this.userWaring.Name = "userWaring";
-            this.userWaring.Size = new System.Drawing.Size(0, 20);
+            this.userWaring.Size = new System.Drawing.Size(122, 20);
             this.userWaring.TabIndex = 11;
-            this.userWaring.Visible = false;
             // 
             // SubjectRegister
             // 

@@ -116,21 +116,21 @@
             this.label9 = new System.Windows.Forms.Label();
             this.Combox_DeleteObject = new System.Windows.Forms.ComboBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.Btn_LimitCard_Delete = new System.Windows.Forms.Button();
-            this.Btn_LimitCard_Add = new System.Windows.Forms.Button();
             this.DataGridView_LimitCard = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.CheckedListBox_LimitCard_Add = new System.Windows.Forms.CheckedListBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.CheckedListBox_LimitCard_Delete = new System.Windows.Forms.CheckedListBox();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.Btn_LimitCard_Add = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
+            this.Btn_LimitCard_Delete = new System.Windows.Forms.Button();
             this.ComboBox_LimtCard_Subject = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.CheckedListBox_LimitCard_Add = new System.Windows.Forms.CheckedListBox();
             this.ComboBox_LimtCard_Object = new System.Windows.Forms.ComboBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.CheckedListBox_LimitCard_Delete = new System.Windows.Forms.CheckedListBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -166,9 +166,9 @@
             this.tabPage5.SuspendLayout();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_LimitCard)).BeginInit();
+            this.panel8.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -649,7 +649,7 @@
             this.Btn_Ability_Add.FlatAppearance.BorderSize = 0;
             this.Btn_Ability_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Ability_Add.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Btn_Ability_Add.Location = new System.Drawing.Point(302, 81);
+            this.Btn_Ability_Add.Location = new System.Drawing.Point(302, 146);
             this.Btn_Ability_Add.Name = "Btn_Ability_Add";
             this.Btn_Ability_Add.Size = new System.Drawing.Size(87, 28);
             this.Btn_Ability_Add.TabIndex = 33;
@@ -676,7 +676,7 @@
             this.Btn_Ability_Delete.FlatAppearance.BorderSize = 0;
             this.Btn_Ability_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Ability_Delete.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Btn_Ability_Delete.Location = new System.Drawing.Point(302, 212);
+            this.Btn_Ability_Delete.Location = new System.Drawing.Point(302, 180);
             this.Btn_Ability_Delete.Name = "Btn_Ability_Delete";
             this.Btn_Ability_Delete.Size = new System.Drawing.Size(87, 28);
             this.Btn_Ability_Delete.TabIndex = 32;
@@ -986,38 +986,6 @@
             this.tabPage8.TabIndex = 8;
             this.tabPage8.Text = "黑令牌";
             // 
-            // Btn_LimitCard_Delete
-            // 
-            this.Btn_LimitCard_Delete.BackColor = System.Drawing.Color.Red;
-            this.Btn_LimitCard_Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Btn_LimitCard_Delete.FlatAppearance.BorderSize = 0;
-            this.Btn_LimitCard_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_LimitCard_Delete.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Btn_LimitCard_Delete.Location = new System.Drawing.Point(443, 189);
-            this.Btn_LimitCard_Delete.Name = "Btn_LimitCard_Delete";
-            this.Btn_LimitCard_Delete.Size = new System.Drawing.Size(87, 28);
-            this.Btn_LimitCard_Delete.TabIndex = 35;
-            this.Btn_LimitCard_Delete.TabStop = false;
-            this.Btn_LimitCard_Delete.Text = "←--";
-            this.Btn_LimitCard_Delete.UseVisualStyleBackColor = false;
-            this.Btn_LimitCard_Delete.Click += new System.EventHandler(this.Btn_LimitCard_Delete_Click);
-            // 
-            // Btn_LimitCard_Add
-            // 
-            this.Btn_LimitCard_Add.BackColor = System.Drawing.Color.Lime;
-            this.Btn_LimitCard_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Btn_LimitCard_Add.FlatAppearance.BorderSize = 0;
-            this.Btn_LimitCard_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_LimitCard_Add.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Btn_LimitCard_Add.Location = new System.Drawing.Point(443, 91);
-            this.Btn_LimitCard_Add.Name = "Btn_LimitCard_Add";
-            this.Btn_LimitCard_Add.Size = new System.Drawing.Size(87, 28);
-            this.Btn_LimitCard_Add.TabIndex = 34;
-            this.Btn_LimitCard_Add.TabStop = false;
-            this.Btn_LimitCard_Add.Text = "--→";
-            this.Btn_LimitCard_Add.UseVisualStyleBackColor = false;
-            this.Btn_LimitCard_Add.Click += new System.EventHandler(this.Btn_LimitCard_Add_Click);
-            // 
             // DataGridView_LimitCard
             // 
             this.DataGridView_LimitCard.AllowUserToAddRows = false;
@@ -1074,46 +1042,6 @@
             this.dataGridViewTextBoxColumn12.HeaderText = "限制权限";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             // 
-            // panel10
-            // 
-            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel10.Controls.Add(this.CheckedListBox_LimitCard_Add);
-            this.panel10.Location = new System.Drawing.Point(291, 73);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(141, 226);
-            this.panel10.TabIndex = 27;
-            // 
-            // CheckedListBox_LimitCard_Add
-            // 
-            this.CheckedListBox_LimitCard_Add.BackColor = System.Drawing.SystemColors.Window;
-            this.CheckedListBox_LimitCard_Add.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CheckedListBox_LimitCard_Add.CheckOnClick = true;
-            this.CheckedListBox_LimitCard_Add.FormattingEnabled = true;
-            this.CheckedListBox_LimitCard_Add.Location = new System.Drawing.Point(-2, -2);
-            this.CheckedListBox_LimitCard_Add.Name = "CheckedListBox_LimitCard_Add";
-            this.CheckedListBox_LimitCard_Add.Size = new System.Drawing.Size(141, 226);
-            this.CheckedListBox_LimitCard_Add.TabIndex = 28;
-            // 
-            // panel9
-            // 
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel9.Controls.Add(this.CheckedListBox_LimitCard_Delete);
-            this.panel9.Location = new System.Drawing.Point(536, 73);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(141, 226);
-            this.panel9.TabIndex = 26;
-            // 
-            // CheckedListBox_LimitCard_Delete
-            // 
-            this.CheckedListBox_LimitCard_Delete.BackColor = System.Drawing.SystemColors.Window;
-            this.CheckedListBox_LimitCard_Delete.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CheckedListBox_LimitCard_Delete.CheckOnClick = true;
-            this.CheckedListBox_LimitCard_Delete.FormattingEnabled = true;
-            this.CheckedListBox_LimitCard_Delete.Location = new System.Drawing.Point(-1, 0);
-            this.CheckedListBox_LimitCard_Delete.Name = "CheckedListBox_LimitCard_Delete";
-            this.CheckedListBox_LimitCard_Delete.Size = new System.Drawing.Size(141, 226);
-            this.CheckedListBox_LimitCard_Delete.TabIndex = 27;
-            // 
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1134,6 +1062,22 @@
             this.panel8.TabIndex = 24;
             this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
+            // Btn_LimitCard_Add
+            // 
+            this.Btn_LimitCard_Add.BackColor = System.Drawing.Color.Lime;
+            this.Btn_LimitCard_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Btn_LimitCard_Add.FlatAppearance.BorderSize = 0;
+            this.Btn_LimitCard_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_LimitCard_Add.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Btn_LimitCard_Add.Location = new System.Drawing.Point(443, 91);
+            this.Btn_LimitCard_Add.Name = "Btn_LimitCard_Add";
+            this.Btn_LimitCard_Add.Size = new System.Drawing.Size(87, 28);
+            this.Btn_LimitCard_Add.TabIndex = 34;
+            this.Btn_LimitCard_Add.TabStop = false;
+            this.Btn_LimitCard_Add.Text = "--→";
+            this.Btn_LimitCard_Add.UseVisualStyleBackColor = false;
+            this.Btn_LimitCard_Add.Click += new System.EventHandler(this.Btn_LimitCard_Add_Click);
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -1143,6 +1087,22 @@
             this.label15.Size = new System.Drawing.Size(110, 20);
             this.label15.TabIndex = 6;
             this.label15.Text = "被限制主体名称:";
+            // 
+            // Btn_LimitCard_Delete
+            // 
+            this.Btn_LimitCard_Delete.BackColor = System.Drawing.Color.Red;
+            this.Btn_LimitCard_Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Btn_LimitCard_Delete.FlatAppearance.BorderSize = 0;
+            this.Btn_LimitCard_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_LimitCard_Delete.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Btn_LimitCard_Delete.Location = new System.Drawing.Point(443, 189);
+            this.Btn_LimitCard_Delete.Name = "Btn_LimitCard_Delete";
+            this.Btn_LimitCard_Delete.Size = new System.Drawing.Size(87, 28);
+            this.Btn_LimitCard_Delete.TabIndex = 35;
+            this.Btn_LimitCard_Delete.TabStop = false;
+            this.Btn_LimitCard_Delete.Text = "←--";
+            this.Btn_LimitCard_Delete.UseVisualStyleBackColor = false;
+            this.Btn_LimitCard_Delete.Click += new System.EventHandler(this.Btn_LimitCard_Delete_Click);
             // 
             // ComboBox_LimtCard_Subject
             // 
@@ -1170,6 +1130,26 @@
             this.label16.Text = "客体名称:";
             this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
+            // panel10
+            // 
+            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel10.Controls.Add(this.CheckedListBox_LimitCard_Add);
+            this.panel10.Location = new System.Drawing.Point(291, 73);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(141, 226);
+            this.panel10.TabIndex = 27;
+            // 
+            // CheckedListBox_LimitCard_Add
+            // 
+            this.CheckedListBox_LimitCard_Add.BackColor = System.Drawing.SystemColors.Window;
+            this.CheckedListBox_LimitCard_Add.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CheckedListBox_LimitCard_Add.CheckOnClick = true;
+            this.CheckedListBox_LimitCard_Add.FormattingEnabled = true;
+            this.CheckedListBox_LimitCard_Add.Location = new System.Drawing.Point(-2, -2);
+            this.CheckedListBox_LimitCard_Add.Name = "CheckedListBox_LimitCard_Add";
+            this.CheckedListBox_LimitCard_Add.Size = new System.Drawing.Size(141, 226);
+            this.CheckedListBox_LimitCard_Add.TabIndex = 28;
+            // 
             // ComboBox_LimtCard_Object
             // 
             this.ComboBox_LimtCard_Object.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
@@ -1184,6 +1164,26 @@
             this.ComboBox_LimtCard_Object.Size = new System.Drawing.Size(202, 22);
             this.ComboBox_LimtCard_Object.TabIndex = 14;
             this.ComboBox_LimtCard_Object.SelectedIndexChanged += new System.EventHandler(this.ComboBox_LimtCard_Object_SelectedIndexChanged);
+            // 
+            // panel9
+            // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel9.Controls.Add(this.CheckedListBox_LimitCard_Delete);
+            this.panel9.Location = new System.Drawing.Point(536, 73);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(141, 226);
+            this.panel9.TabIndex = 26;
+            // 
+            // CheckedListBox_LimitCard_Delete
+            // 
+            this.CheckedListBox_LimitCard_Delete.BackColor = System.Drawing.SystemColors.Window;
+            this.CheckedListBox_LimitCard_Delete.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CheckedListBox_LimitCard_Delete.CheckOnClick = true;
+            this.CheckedListBox_LimitCard_Delete.FormattingEnabled = true;
+            this.CheckedListBox_LimitCard_Delete.Location = new System.Drawing.Point(-1, 0);
+            this.CheckedListBox_LimitCard_Delete.Name = "CheckedListBox_LimitCard_Delete";
+            this.CheckedListBox_LimitCard_Delete.Size = new System.Drawing.Size(141, 226);
+            this.CheckedListBox_LimitCard_Delete.TabIndex = 27;
             // 
             // label18
             // 
@@ -1429,10 +1429,10 @@
             this.tabPage5.PerformLayout();
             this.tabPage8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_LimitCard)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             this.tabPage7.ResumeLayout(false);
