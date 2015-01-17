@@ -126,3 +126,17 @@ G:\academic work\认证与访问控制\源代码\DAC\DAC\obj\Debug\DAC.Login.res
 G:\academic work\认证与访问控制\源代码\DAC\DAC\obj\Debug\DAC.Properties.Resources.resources
 G:\academic work\认证与访问控制\源代码\DAC\DAC\obj\Debug\DAC.SubjectRegister.resources
 G:\academic work\认证与访问控制\源代码\DAC\DAC\obj\Debug\DAC.csproj.GenerateResource.Cache
+C:\Users\GIN\Desktop\control\DAC\DAC\bin\Debug\DAC.exe.config
+C:\Users\GIN\Desktop\control\DAC\DAC\obj\Debug\Interop.ADODB.dll
+C:\Users\GIN\Desktop\control\DAC\DAC\obj\Debug\Interop.ADOX.dll
+C:\Users\GIN\Desktop\control\DAC\DAC\obj\Debug\DAC.csproj.ResolveComReference.cache
+C:\Users\GIN\Desktop\control\DAC\DAC\obj\Debug\DAC.exe
+C:\Users\GIN\Desktop\control\DAC\DAC\obj\Debug\DAC.pdb
+C:\Users\GIN\Desktop\control\DAC\DAC\bin\Debug\DAC.exe
+C:\Users\GIN\Desktop\control\DAC\DAC\bin\Debug\DAC.pdb
+C:\Users\GIN\Desktop\control\DAC\DAC\obj\Debug\DAC.csprojResolveAssemblyReference.cache
+C:\Users\GIN\Desktop\control\DAC\DAC\obj\Debug\DAC.Dac.resources
+C:\Users\GIN\Desktop\control\DAC\DAC\obj\Debug\DAC.Login.resources
+C:\Users\GIN\Desktop\control\DAC\DAC\obj\Debug\DAC.Properties.Resources.resources
+C:\Users\GIN\Desktop\control\DAC\DAC\obj\Debug\DAC.SubjectRegister.resources
+C:\Users\GIN\Desktop\control\DAC\DAC\obj\Debug\DAC.csproj.GenerateResource.Cache
